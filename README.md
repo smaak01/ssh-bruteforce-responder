@@ -28,7 +28,7 @@ flowchart LR
 Requires Python 3.10+. Works on any OS for detection and alerting; applying blocks needs Linux with `ufw` or `iptables`.
 
 ```bash
-git clone https://github.com/<your-username>/ssh-bruteforce-responder.git
+git clone https://github.com/Smaak01/ssh-bruteforce-responder.git
 cd ssh-bruteforce-responder
 python -m venv .venv && source .venv/bin/activate   # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
