@@ -93,6 +93,11 @@ Summary: 4 incident(s) [1 critical, 1 high, 1 medium, 1 low] | Discord alerts se
 ```
 
 Things worth noticing: the user who mistyped their password twice raised no incident, the internal host was detected but protected from auto-blocking, and the one attacker who got in is escalated to critical.
+### Tested on a live system
+
+Run against the real `/var/log/auth.log` of an Ubuntu machine, after simulated SSH password-guessing against its own SSH server:
+
+![Real run](docs/real-run.png)
 
 ## How it works
 
