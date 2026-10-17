@@ -14,7 +14,7 @@ from .models import AuthEvent
 # newer rsyslog/journald setups use ("2026-10-15T02:14:03.123456+04:00").
 _PREFIX = (
     r"^(?P<ts>\d{4}-\d{2}-\d{2}T\S+|[A-Z][a-z]{2}\s+\d{1,2}\s+\d{2}:\d{2}:\d{2})"
-    r"\s+(?P<host>\S+)\s+sshd(?:\[\d+\])?:\s+"
+    r"\s+(?P<host>\S+)\s+sshd(?:-session)?(?:\[\d+\])?:\s+"
 )
 
 _FAILED = re.compile(
